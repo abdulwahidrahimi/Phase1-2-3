@@ -1,7 +1,7 @@
 /// File: /README.md
 # CPAN144 Group Project
 
-## ✅ Phase 1 – Project Setup
+##  Phase 1 – Project Setup
 
 **Overview:** Establish foundational structure using Next.js with classic routing, state, and simple components.
 
@@ -11,7 +11,7 @@
 - Interactive counter on homepage
 - Basic responsive layout and CSS styling
 
-### 📁 Structure Highlights:
+###  Structure Highlights:
 ```
 components/
   ├── Navbar.js
@@ -25,7 +25,7 @@ pages/
 
 ---
 
-## ✅ Phase 2 – Component Modularity & Dynamic Routing
+##  Phase 2 – Component Modularity & Dynamic Routing
 
 **Overview:** Enhance layout, modularity, and add dynamic routing. Migrate inline styles to CSS Modules.
 
@@ -36,13 +36,13 @@ pages/
 - Dynamic route: `/user/[id].js`
 - Placeholder API: `lib/api.js`
 
-### 🧩 New Components:
+###  New Components:
 - `Layout.js`, `Welcome.js`, `Counter.js`
 
-### 🌐 New Pages:
+###  New Pages:
 - `user/[id].js` for dynamic routing
 
-### 📁 Structure Highlights:
+###  Structure Highlights:
 ```
 components/
   ├── Layout.js
@@ -61,7 +61,7 @@ styles/
 
 ---
 
-## 🚀 To Run Locally:
+##  To Run Locally:
 ```bash
 npm install
 npm run dev
@@ -70,11 +70,10 @@ Visit: `http://localhost:3000`
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 Include screenshots of:
 - Homepage with counter
 - About page with toggle
 - Contact form
 - Dynamic user page `/user/123`
 
-# Phase1-2-3
