@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+/// File: /README.md
+# CPAN144 Group Project
 
-## Getting Started
+## ✅ Phase 1 – Project Setup
 
-First, run the development server:
+**Overview:** Establish foundational structure using Next.js with classic routing, state, and simple components.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### ✔ Features:
+- `pages/` based routing (`index`, `about`, `contact`)
+- `Navbar`, `Footer`, and `MainContent` components
+- Interactive counter on homepage
+- Basic responsive layout and CSS styling
+
+### 📁 Structure Highlights:
+```
+components/
+  ├── Navbar.js
+  ├── Footer.js
+  └── MainContent.js
+pages/
+  ├── index.js
+  ├── about.js
+  └── contact.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ✅ Phase 2 – Component Modularity & Dynamic Routing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Overview:** Enhance layout, modularity, and add dynamic routing. Migrate inline styles to CSS Modules.
 
-## Learn More
+### ✔ Features:
+- `Layout.js` wraps all pages for consistent structure
+- Split `MainContent` into `Welcome` and `Counter`
+- CSS Modules for responsive design
+- Dynamic route: `/user/[id].js`
+- Placeholder API: `lib/api.js`
 
-To learn more about Next.js, take a look at the following resources:
+### 🧩 New Components:
+- `Layout.js`, `Welcome.js`, `Counter.js`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🌐 New Pages:
+- `user/[id].js` for dynamic routing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 📁 Structure Highlights:
+```
+components/
+  ├── Layout.js
+  ├── Welcome.js
+  └── Counter.js
+pages/
+  ├── user/
+  │   └── [id].js
+lib/
+  └── api.js
+styles/
+  ├── globals.css
+  ├── Layout.module.css
+  └── Counter.module.css
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 To Run Locally:
+```bash
+npm install
+npm run dev
+```
+Visit: `http://localhost:3000`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📸 Screenshots
+Include screenshots of:
+- Homepage with counter
+- About page with toggle
+- Contact form
+- Dynamic user page `/user/123`
+
+# Phase1-2-3
